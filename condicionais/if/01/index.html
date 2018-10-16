@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso Javascript</title>
+</head>
+<body>
+
+  <script>
+    //javascript
+
+
+    function retornaSexo(sexo){
+      //M F
+      //masculino, feminino
+      //== e ===
+      if(1 == "1"){
+        //nao considera o tipo apenas o valor
+        //true
+      }
+      if(1 === "1"){
+        //considera o tipo e o valor
+        //false
+      }
+
+      //verificação
+      if(sexo === 'M' || sexo === 'm'){
+
+        return 'Masculino';
+
+      }else if(sexo === 'F' || sexo === 'f'){
+
+        return 'Feminino';
+
+      }else{
+
+        return 'outro';
+        
+      }
+    }
+
+    //variavel global
+    var res = retornaSexo('f');
+
+    console.log(res);
+
+  </script>
+</body>
+</html>
+
