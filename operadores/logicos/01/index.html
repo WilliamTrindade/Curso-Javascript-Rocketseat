@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso Javascript</title>
+</head>
+<body>
+  <script>
+//AND OR NOT
+
+    var sexo = 'M', idade = 23;
+    if(sexo === 'M' && idade > 18){
+      console.log('OK');
+    }
+
+    if(sexo === 'M'|| idade > 18){
+      console.log('OK');
+    }
+
+    //!=
+    if(sexo !== 'M'){
+      console.log('não');
+    }
+
+//REDUZINDO CODIGO
+    /*
+    var sexo;
+    
+    if (sexo === 'M'){
+      return true;
+    } else{
+      return false;
+    }
+    */
+
+    sexo = ( sexo === 'M');
+
+    console.log(sexo);
+  </script>
+</body>
+</html>
+
