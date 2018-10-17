@@ -14,10 +14,11 @@
   </div>
 
   <script>
-    var elemento = document.querySelector('button.button');
-
-    elemento.onclick = function(){
-       alert('Hello World');
+    var botao = document.querySelector('button.button');
+    var campo = document.querySelector('input[name=nome2]');
+    botao.onclick = function(){
+      var texto = campo.value;
+      alert(texto);
     }
   
   </script>
