@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Curso Javascript</title>
+</head>
+<body>
+  <div class="col-md-5">
+    <input type="text" name="nome1" placeholder="Nome:" id="nome1" class="nome">
+    <input type="text" name="nome2" placeholder="Nome:" id="nome2" class="nome">
+    <button class="botao">Adicionar</button>
+  </div>
+  <script>
+    
+    //melhor maneira
+    //query selector
+    //posso andar pela DOM
+    var inputElemnt = document.querySelector('.col-md-5 input');
+    var inputElemnt = document.querySelectorAll('input');//retorna tudo 
+    var inputElemnt = document.querySelector('input');//retorna o primeiro
+    var inputElemnt = document.querySelector('input[name=nome1]');//retorna um especifico
+    console.log(inputElemnt);
+
+    //pega o elemento pelo ID
+    var inputElemnt = document.getElementById('nome1');
+    console.log(inputElemnt);
+
+    //pega um array de elementos pela tag
+    var inputElemnt = document.getElementsByTagName('input');
+    console.log(inputElemnt);
+
+    //pega um array de elementos pela class
+    var inputElemnt = document.getElementsByClassName('nome');
+    console.log(inputElemnt);
+
+  </script>
+</body>
+</html>
+
